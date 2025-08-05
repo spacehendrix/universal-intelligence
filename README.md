@@ -1246,7 +1246,7 @@ Linting will run as part of the pre-commit hook, however you may also run it man
 
 ## Thanks
 
-Thanks for our friends at [Hugging Face](https://huggingface.co) for making open source AI a reality. ✨
+Thanks to our friends at [Hugging Face](https://huggingface.co) for making open source AI a reality. ✨
 
 This project is powered by these fantastic engines: [transformers](https://github.com/huggingface/transformers), [llama.cpp](https://github.com/ggml-org/llama.cpp), [mlx-lm](https://github.com/ml-explore/mlx-lm), [web-llm](https://github.com/mlc-ai/web-llm), [openrouter](https://openrouter.ai).
 

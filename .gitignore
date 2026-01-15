@@ -36,3 +36,8 @@ webdist
 distweb
 .cursorignore
 .private*
+
+.claude/
+.claude-backup/
+.claude-mcp-backup/ 
+.mcp.json

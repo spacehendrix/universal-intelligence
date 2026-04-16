@@ -1,14 +1,14 @@
 ![Universal Intelligence](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//universal-intelligence-banner-rsm.png)
 
 <p align="center">
-    <a href="https://github.com/blueraai/universal-intelligence/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/blueraai/universal-intelligence.svg?color=1c4afe"></a>
-    <a href="https://github.com/blueraai/universal-intelligence/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/blueraai/universal-intelligence.svg?color=00bf48"></a>
+    <a href="https://github.com/spacehendrix/universal-intelligence/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/spacehendrix/universal-intelligence.svg?color=1c4afe"></a>
+    <a href="https://github.com/spacehendrix/universal-intelligence/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/spacehendrix/universal-intelligence.svg?color=00bf48"></a>
     <a href="https://discord.gg/7g9SrEc5yT"><img alt="Discord" src="https://img.shields.io/badge/Join-Discord-7289DA?logo=discord&logoColor=white&color=4911ff"></a>
 </p>
 
 > ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) This page aims to document **Python** protocols and usage (e.g. cloud, desktop).
 >
-> Looking for [**Javascript/Typescript instructions**](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md)?
+> Looking for [**Javascript/Typescript instructions**](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md)?
 
 ## Overview
 
@@ -16,7 +16,7 @@
 
 It provides both a **standard protocol**, and a **library of components** implementating the protocol for you to get started —on *any platform* ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png).
 
-> 🧩 AI made simple. [Bluera Inc.](https://bluera.ai)
+> 🧩 AI made simple. [spacehendrix](https://spacehendrix.com)
 
 Learn more by clicking the most appropriate option for you:
 <details>
@@ -180,7 +180,7 @@ python -m playground.example
 ## Documentation
 
 > [!TIP]
-> Would you rather [**chat with our docs**](https://wiki.bluera.ai)? 💬
+> Would you rather [**chat with our docs**](https://githubchat.spacehendrix.com/#url=https%3A%2F%2Fgithub.com%2Fspacehendrix%2Funiversal-intelligence%2Fblob%2Fmain%2FREADME.md)? 💬
 > 
 > *Note: AI responses may include mistakes. Refer to the documentation below for sample code.*
 
@@ -621,7 +621,7 @@ class UniversalAgent(AbstractUniversalAgent):
   pass
 ```
 
-If you wish to contribute to community based components, [mixins](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/__utils__/mixins) are made available to allow quickly bootstrapping new `Universal Models`.
+If you wish to contribute to community based components, [mixins](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/__utils__/mixins) are made available to allow quickly bootstrapping new `Universal Models`.
 
 > See *Community>Development* section below for additional information.
 
@@ -681,7 +681,7 @@ model = Model()
 output, logs = model.process("How are you doing today?")
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md) for additional information.
 
 #### Remote Models
 
@@ -692,7 +692,7 @@ model = Model(credentials='your-openrouter-api-key-here')
 output, logs = model.process("How are you doing today?")
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md) for additional information.
 
 #### Tools
 
@@ -703,7 +703,7 @@ tool = Tool()
 result, logs = tool.print_text("This needs to be printed")
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md) for additional information.
 
 #### Agents
 
@@ -718,7 +718,7 @@ agent = Agent(
 result, logs = agent.process("Please print 'Hello World' to the console", extra_tools=[Tool()])
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md) for additional information.
 
 ### Supported Components
 
@@ -732,33 +732,33 @@ result, logs = agent.process("Please print 'Hello World' to the console", extra_
 
 | I/O | Name | Import | Description | Supported Configurations |
 |------|------|------|-------------|-----------|
-| Text/Text | *Qwen2.5-7B-Instruct* (default)| `default`<br> or `qwen2_5_7b_instruct` | Small powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-32B-Instruct* | `qwen2_5_32b_instruct` | Large powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_32b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-14B-Instruct* | `qwen2_5_14b_instruct` | Medium powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_14b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-14B-Instruct-1M* | `qwen2_5_14b_instruct_1m` | Medium powerful model with 1M context by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_14b_instruct_1m/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-7B-Instruct-1M* | `qwen2_5_7b_instruct_1m` | Small powerful model with 1M context by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct_1m/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-3B-Instruct* | `qwen2_5_3b_instruct` | Compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Qwen2.5-1.5B-Instruct* | `qwen2_5_1d5b_instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_1d5b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *gemma-3-27b-it* | `gemma3_27b_it` | Large powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_27b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:Q4_K_M:llama.cpp`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *gemma-3-12b-it* | `gemma3_12b_it` | Medium powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_12b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *gemma-3-4b-it* | `gemma3_4b_it` | Small powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_4b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *gemma-3-1b-it* | `gemma3_1b_it` | Ultra-compact powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_1b_it/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:bfloat16:transformers` |
-| Text/Text | *falcon-3-10b-instruct* | `falcon3_10b_instruct` | Medium powerful model by TII |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_10b_instruct/sources.yaml)<br><br>Default:<br>`cuda:AWQ_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *falcon-3-7b-instruct* | `falcon3_7b_instruct` | Small powerful model by TII |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:Q4_K_M:llama.cpp`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *falcon-3-3b-instruct* | `falcon3_3b_instruct` | Compact powerful model by TII |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:bfloat16:transformers` |
-| Text/Text | *Llama-3.3-70B-Instruct* | `llama3_3_70b_instruct` | Large powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_3_70b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Llama-3.1-8B-Instruct* | `llama3_1_8b_instruct` | Small powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_1_8b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Llama-3.2-3B-Instruct* | `llama3_2_3b_instruct` | Compact powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_2_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *Llama-3.2-1B-Instruct* | `llama3_2_1b_instruct` | Ultra-compact powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_2_1b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *phi-4* | `phi4` | Small powerful model by Microsoft |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/phi4/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *phi-4-mini-instruct* | `phi4_mini_instruct` | Compact powerful model by Microsoft |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/phi4_mini_instruct/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *smollm2-1.7b-instruct* | `smollm2_1d7b_instruct` | Small powerful model by SmolLM |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_1d7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *smollm2-360m-instruct* | `smollm2_360m_instruct` | Ultra-compact powerful model by SmolLM |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_360m_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *smollm2-135m-instruct* | `smollm2_135m_instruct` | Ultra-compact powerful model by SmolLM |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_135m_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:bfloat16:transformers` |
-| Text/Text | *mistral-7b-instruct-v0.3* | `mistral_7b_instruct_v0d3` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/mistral_7b_instruct_v0d3/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *mistral-nemo-instruct-2407* | `mistral_nemo_instruct_2407` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/mistral_nemo_instruct_2407/sources.yaml)<br><br>Default:<br>`cuda:AWQ_4:transformers`<br>`mps:MLX_3:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *OpenR1-Qwen-7B* | `openr1_qwen_7b` | Medium powerful model by Open R1 |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/openr1_qwen_7b/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
-| Text/Text | *QwQ-32B* | `qwq_32b` | Large powerful model by Qwen |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwq_32b/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-7B-Instruct* (default)| `default`<br> or `qwen2_5_7b_instruct` | Small powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-32B-Instruct* | `qwen2_5_32b_instruct` | Large powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_32b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-14B-Instruct* | `qwen2_5_14b_instruct` | Medium powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_14b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-14B-Instruct-1M* | `qwen2_5_14b_instruct_1m` | Medium powerful model with 1M context by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_14b_instruct_1m/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-7B-Instruct-1M* | `qwen2_5_7b_instruct_1m` | Small powerful model with 1M context by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct_1m/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-3B-Instruct* | `qwen2_5_3b_instruct` | Compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Qwen2.5-1.5B-Instruct* | `qwen2_5_1d5b_instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_1d5b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *gemma-3-27b-it* | `gemma3_27b_it` | Large powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_27b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:Q4_K_M:llama.cpp`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *gemma-3-12b-it* | `gemma3_12b_it` | Medium powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_12b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *gemma-3-4b-it* | `gemma3_4b_it` | Small powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_4b_it/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *gemma-3-1b-it* | `gemma3_1b_it` | Ultra-compact powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/gemma3_1b_it/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:bfloat16:transformers` |
+| Text/Text | *falcon-3-10b-instruct* | `falcon3_10b_instruct` | Medium powerful model by TII |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_10b_instruct/sources.yaml)<br><br>Default:<br>`cuda:AWQ_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *falcon-3-7b-instruct* | `falcon3_7b_instruct` | Small powerful model by TII |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:Q4_K_M:llama.cpp`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *falcon-3-3b-instruct* | `falcon3_3b_instruct` | Compact powerful model by TII |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/falcon3_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:bfloat16:transformers` |
+| Text/Text | *Llama-3.3-70B-Instruct* | `llama3_3_70b_instruct` | Large powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_3_70b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Llama-3.1-8B-Instruct* | `llama3_1_8b_instruct` | Small powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_1_8b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Llama-3.2-3B-Instruct* | `llama3_2_3b_instruct` | Compact powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_2_3b_instruct/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *Llama-3.2-1B-Instruct* | `llama3_2_1b_instruct` | Ultra-compact powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/llama3_2_1b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:bfloat16:transformers`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *phi-4* | `phi4` | Small powerful model by Microsoft |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/phi4/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *phi-4-mini-instruct* | `phi4_mini_instruct` | Compact powerful model by Microsoft |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/phi4_mini_instruct/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *smollm2-1.7b-instruct* | `smollm2_1d7b_instruct` | Small powerful model by SmolLM |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_1d7b_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *smollm2-360m-instruct* | `smollm2_360m_instruct` | Ultra-compact powerful model by SmolLM |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_360m_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *smollm2-135m-instruct* | `smollm2_135m_instruct` | Ultra-compact powerful model by SmolLM |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/smollm2_135m_instruct/sources.yaml)<br><br>Default:<br>`cuda:bfloat16:transformers`<br>`mps:MLX_8:mlx`<br>`cpu:bfloat16:transformers` |
+| Text/Text | *mistral-7b-instruct-v0.3* | `mistral_7b_instruct_v0d3` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/mistral_7b_instruct_v0d3/sources.yaml)<br><br>Default:<br>`cuda:Q4_K_M:llama.cpp`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *mistral-nemo-instruct-2407* | `mistral_nemo_instruct_2407` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/mistral_nemo_instruct_2407/sources.yaml)<br><br>Default:<br>`cuda:AWQ_4:transformers`<br>`mps:MLX_3:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *OpenR1-Qwen-7B* | `openr1_qwen_7b` | Medium powerful model by Open R1 |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/openr1_qwen_7b/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
+| Text/Text | *QwQ-32B* | `qwq_32b` | Large powerful model by Qwen |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwq_32b/sources.yaml)<br><br>Default:<br>`cuda:BNB_4:transformers`<br>`mps:MLX_4:mlx`<br>`cpu:Q4_K_M:llama.cpp` |
 
 ##### Remote Models
 
@@ -1143,7 +1143,7 @@ universal-intelligence/
 
 #### Creating New Components
 
-For faster deployment and easier maintenance, we recommend using/enhancing *shared* mixins to bootstrap new `Universal Intelligence` components. Those are made available at `./universal_intelligence/community/<component>/__utils__/mixins`. Mixins let components provide their own configurations and while levering a shared implementation. You can find an example here: [./universal_intelligence/community/models/qwen2_5_7b_instruct/model.py](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/model.py).
+For faster deployment and easier maintenance, we recommend using/enhancing *shared* mixins to bootstrap new `Universal Intelligence` components. Those are made available at `./universal_intelligence/community/<component>/__utils__/mixins`. Mixins let components provide their own configurations and while levering a shared implementation. You can find an example here: [./universal_intelligence/community/models/qwen2_5_7b_instruct/model.py](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/model.py).
 
 > Model weights can be found here: https://huggingface.co 
 
@@ -1218,18 +1218,18 @@ Test utilities provide shared test suites for each component type.
 
 Model test examples:
 
-- Test Suite: [`universal_intelligence/community/models/__utils__/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/__utils__/test.py)
-- Usage: [`universal_intelligence/community/models/qwen2_5_7b_instruct/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/test.py)
+- Test Suite: [`universal_intelligence/community/models/__utils__/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/__utils__/test.py)
+- Usage: [`universal_intelligence/community/models/qwen2_5_7b_instruct/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/models/qwen2_5_7b_instruct/test.py)
 
 Agent test examples:
 
-- Test Suite: [`universal_intelligence/community/agents/__utils__/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/agents/__utils__/test.py)
-- Usage: [`universal_intelligence/community/agents/simple_agent/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/agents/simple_agent/test.py)
+- Test Suite: [`universal_intelligence/community/agents/__utils__/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/agents/__utils__/test.py)
+- Usage: [`universal_intelligence/community/agents/simple_agent/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/agents/simple_agent/test.py)
 
 Tool test examples:
 
-- Test Suite: [`universal_intelligence/community/tools/__utils__/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/tools/__utils__/test.py)
-- Usage: [`universal_intelligence/community/tools/simple_printer/test.py`](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/tools/simple_printer/test.py)
+- Test Suite: [`universal_intelligence/community/tools/__utils__/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/tools/__utils__/test.py)
+- Usage: [`universal_intelligence/community/tools/simple_printer/test.py`](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/tools/simple_printer/test.py)
 
 #### Linting
 
@@ -1241,8 +1241,8 @@ Linting will run as part of the pre-commit hook, however you may also run it man
 
 ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) `Universal Intelligence` protocols and components can be used across **all platforms** (cloud, desktop, web, mobile).
 
-- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) [How to use natively with `python` (cloud, desktop)](https://github.com/blueraai/universal-intelligence/blob/main/README.md)
-- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) [How to use on the web, or in web-native apps, with `javascript/typescript` (cloud, desktop, web, mobile)](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md)
+- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) [How to use natively with `python` (cloud, desktop)](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md)
+- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) [How to use on the web, or in web-native apps, with `javascript/typescript` (cloud, desktop, web, mobile)](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md)
 
 ## Thanks
 
@@ -1263,12 +1263,12 @@ If you'd like to support to `universal-intelligence` here are a few ways to do s
 - 💪 Use the [Community Components](https://pypi.org/project/universal-intelligence/)
 - 💡 Help surfacing/resolving issues
 - 💭 Help shape the `⚪ Universal Intelligence` specification
-- 🔧 Help maintain, test, enhance and create [Community Components](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/community/)
+- 🔧 Help maintain, test, enhance and create [Community Components](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/community/)
 - ✉️ Email us security concerns
 - ❤️ Sponsor this project on Github
-- 🤝 [Partner with Bluera](mailto:contact@bluera.ai)
+- 🤝 [Partner with spacehendrix](mailto:thespacehendrix@gmail.com)
 
 
 ## License
 
-Apache 2.0 License - [Bluera Inc.](https://bluera.ai)
+Apache 2.0 License - [spacehendrix](https://spacehendrix.com)

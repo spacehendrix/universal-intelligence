@@ -1,14 +1,14 @@
 ![Universal Intelligence](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//universal-intelligence-banner-rsm.png)
 
 <p align="center">
-    <a href="https://github.com/blueraai/universal-intelligence/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/blueraai/universal-intelligence.svg?color=1c4afe"></a>
-    <a href="https://github.com/blueraai/universal-intelligence/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/blueraai/universal-intelligence.svg?color=00bf48"></a>
+    <a href="https://github.com/spacehendrix/universal-intelligence/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/spacehendrix/universal-intelligence.svg?color=1c4afe"></a>
+    <a href="https://github.com/spacehendrix/universal-intelligence/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/spacehendrix/universal-intelligence.svg?color=00bf48"></a>
     <a href="https://discord.gg/7g9SrEc5yT"><img alt="Discord" src="https://img.shields.io/badge/Join-Discord-7289DA?logo=discord&logoColor=white&color=4911ff"></a>
 </p>
 
 > ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) This page aims to document **Javascript/Typescript** protocols and usage (e.g. cloud, desktop, web, mobile).
 >
-> Looking for [**Python instructions**](https://github.com/blueraai/universal-intelligence/blob/main/README.md)?
+> Looking for [**Python instructions**](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md)?
 
 ## Overview
 
@@ -16,7 +16,7 @@
 
 It provides both a **standard protocol**, and a **library of components** implementating the protocol for you to get started —on *any platform* ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png).
 
-> 🧩 AI made simple. [Bluera Inc.](https://bluera.ai)
+> 🧩 AI made simple. [spacehendrix](https://spacehendrix.com)
 
 Learn more by clicking the most appropriate option for you:
 <details>
@@ -168,7 +168,7 @@ Open in Chrome: `http://localhost:8000/playground/web`
 ## Documentation
 
 > [!TIP]
-> Would you rather [**chat with our docs**](https://wiki.bluera.ai)? 💬
+> Would you rather [**chat with our docs**](https://githubchat.spacehendrix.com/#url=https%3A%2F%2Fgithub.com%2Fspacehendrix%2Funiversal-intelligence%2Fblob%2Fmain%2FREADME_WEB.md)? 💬
 > 
 > *Note: AI responses may include mistakes. Refer to the documentation below for sample code.*
 
@@ -611,7 +611,7 @@ class UniversalAgent extends AbstractUniversalAgent {
 }
 ```
 
-If you wish to contribute to community based components, [mixins](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/www/community/models/__utils__/mixins) are made available to allow quickly bootstrapping new `Universal Models`.
+If you wish to contribute to community based components, [mixins](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/www/community/models/__utils__/mixins) are made available to allow quickly bootstrapping new `Universal Models`.
 
 > See *Community>Development* section below for additional information.
 
@@ -660,7 +660,7 @@ const model = new Model()
 const [result, logs] = await model.process("Hello, how are you?")
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md) for additional information.
 
 #### Remote Models
 
@@ -672,7 +672,7 @@ const model = new Model({ credentials: 'your-openrouter-api-key-here' })
 const [result, logs] = await model.process("Hello, how are you?")
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md) for additional information.
 
 #### Tools
 
@@ -684,7 +684,7 @@ const tool = new Tool()
 const [result, logs] = await tool.printText({ text: "This needs to be printed" })
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md) for additional information.
 
 #### Agents
 
@@ -702,7 +702,7 @@ const agent = new Agent(
 const [result, logs] = await agent.process("Please print 'Hello World' to the console", { extraTools: [Tool()] })
 ```
 
-> View [Universal Intelligence Protocols](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md) for additional information.
+> View [Universal Intelligence Protocols](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md) for additional information.
 
 ### Supported Components
 
@@ -716,19 +716,19 @@ const [result, logs] = await agent.process("Please print 'Hello World' to the co
 
 | I/O | Name | Import | Description | Supported Configurations |
 |------|------|------|-------------|-----------|
-| Text/Text | *Qwen2.5-7B-Instruct* | `Qwen2_5_7b_Instruct` | Small powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_7b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
-| Text/Text | *Qwen2.5-3B-Instruct* (default) | `Qwen2_5_3b_Instruct`<br>or `Model` | Compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_3b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
-| Text/Text | *Qwen2.5-1.5B-Instruct* | `Qwen2_5_1d5b_Instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_1d5b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
-| Text/Text | *Qwen2.5-0.5B-Instruct* | `Qwen2_5_0d5b_Instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_0d5b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
-| Text/Text | *Llama-3-70B-Instruct* | `Llama3_70b_Instruct` | Large powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_70b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_3:webllm` |
-| Text/Text | *Llama-3-1.8B-Instruct* | `Llama3_1_8b_Instruct` | Small powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_1_8b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
-| Text/Text | *Llama-3-2.3B-Instruct* | `Llama3_2_3b_Instruct` | Compact powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_2_3b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
-| Text/Text | *Llama-3-2.1B-Instruct* | `Llama3_2_1b_Instruct` | Ultra-compact powerful model by Meta |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_2_1b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
-| Text/Text | *Mistral-7B-Instruct-v0.3* | `Mistral_7b_Instruct_v0d3` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/mistral_7b_instruct_v0d3/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
-| Text/Text | *Gemma-2-9B-Instruct* | `Gemma2_9b_Instruct` | Medium powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/gemma2_9b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
-| Text/Text | *Gemma-2-2B-Instruct* | `Gemma2_2b_Instruct` | Small powerful model by Google |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/gemma2_2b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
-| Text/Text | *SmolLM2-1.7B-Instruct* | `SmolLM2_1_7b_Instruct` | Small powerful model by Hugging Face |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/smollm2_1d7b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
-| Text/Text | *SmolLM2-360M-Instruct* | `SmolLM2_360m_Instruct` | Ultra-compact powerful model by Hugging Face |  [Supported Configurations](https://github.com/blueraai/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/smollm2_360m_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
+| Text/Text | *Qwen2.5-7B-Instruct* | `Qwen2_5_7b_Instruct` | Small powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_7b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
+| Text/Text | *Qwen2.5-3B-Instruct* (default) | `Qwen2_5_3b_Instruct`<br>or `Model` | Compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_3b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
+| Text/Text | *Qwen2.5-1.5B-Instruct* | `Qwen2_5_1d5b_Instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_1d5b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
+| Text/Text | *Qwen2.5-0.5B-Instruct* | `Qwen2_5_0d5b_Instruct` | Ultra-compact powerful model by Alibaba Cloud |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/qwen2_5_0d5b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
+| Text/Text | *Llama-3-70B-Instruct* | `Llama3_70b_Instruct` | Large powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_70b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_3:webllm` |
+| Text/Text | *Llama-3-1.8B-Instruct* | `Llama3_1_8b_Instruct` | Small powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_1_8b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
+| Text/Text | *Llama-3-2.3B-Instruct* | `Llama3_2_3b_Instruct` | Compact powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_2_3b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
+| Text/Text | *Llama-3-2.1B-Instruct* | `Llama3_2_1b_Instruct` | Ultra-compact powerful model by Meta |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/llama3_2_1b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
+| Text/Text | *Mistral-7B-Instruct-v0.3* | `Mistral_7b_Instruct_v0d3` | Small powerful model by Mistral |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/mistral_7b_instruct_v0d3/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
+| Text/Text | *Gemma-2-9B-Instruct* | `Gemma2_9b_Instruct` | Medium powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/gemma2_9b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
+| Text/Text | *Gemma-2-2B-Instruct* | `Gemma2_2b_Instruct` | Small powerful model by Google |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/gemma2_2b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4_32:webllm` |
+| Text/Text | *SmolLM2-1.7B-Instruct* | `SmolLM2_1_7b_Instruct` | Small powerful model by Hugging Face |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/smollm2_1d7b_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_4:webllm` |
+| Text/Text | *SmolLM2-360M-Instruct* | `SmolLM2_360m_Instruct` | Ultra-compact powerful model by Hugging Face |  [Supported Configurations](https://github.com/spacehendrix/universal-intelligence/sources.tsblob/main/universal_intelligence/www/community/models/smollm2_360m_instruct/sources.ts)<br><br>Default:<br>`webgpu:MLC_8_32:webllm` |
 
 ##### Remote Models
 
@@ -1111,7 +1111,7 @@ universal-intelligence/
 
 #### Creating New Components
 
-For faster deployment and easier maintenance, we recommend using/enhancing *shared* mixins to bootstrap new `Universal Intelligence` components. Those are made available at `./universal_intelligence/www/community/<component>/__utils__/mixins`. Mixins let components provide their own configurations and while levering a shared implementation. You can find an example here: [./universal_intelligence/www/community/models/qwen2_5_7b_instruct/model.ts](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/www/community/models/qwen2_5_7b_instruct/model.ts).
+For faster deployment and easier maintenance, we recommend using/enhancing *shared* mixins to bootstrap new `Universal Intelligence` components. Those are made available at `./universal_intelligence/www/community/<component>/__utils__/mixins`. Mixins let components provide their own configurations and while levering a shared implementation. You can find an example here: [./universal_intelligence/www/community/models/qwen2_5_7b_instruct/model.ts](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/www/community/models/qwen2_5_7b_instruct/model.ts).
 
 > Model weights can be found here: https://huggingface.co 
 
@@ -1121,8 +1121,8 @@ For faster deployment and easier maintenance, we recommend using/enhancing *shar
 
 ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) `Universal Intelligence` protocols and components can be used across **all platforms** (cloud, desktop, web, mobile).
 
-- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) [How to use natively with `python` (cloud, desktop)](https://github.com/blueraai/universal-intelligence/blob/main/README.md)
-- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) [How to use on the web, or in web-native apps, with `javascript/typescript` (cloud, desktop, web, mobile)](https://github.com/blueraai/universal-intelligence/blob/main/README_WEB.md)
+- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-python-16.png) [How to use natively with `python` (cloud, desktop)](https://github.com/spacehendrix/universal-intelligence/blob/main/README.md)
+- ![lng_icon](https://fasplnlepuuumfjocrsu.supabase.co/storage/v1/object/public/web-assets//icons8-javascript-16.png) [How to use on the web, or in web-native apps, with `javascript/typescript` (cloud, desktop, web, mobile)](https://github.com/spacehendrix/universal-intelligence/blob/main/README_WEB.md)
 
 ## Thanks
 
@@ -1143,12 +1143,12 @@ If you'd like to support to `universal-intelligence` here are a few ways to do s
 - 💪 Use the [Community Components](https://www.npmjs.com/package/universalintelligence)
 - 💡 Help surfacing/resolving issues
 - 💭 Help shape the `⚪ Universal Intelligence` specification
-- 🔧 Help maintain, test, enhance and create [Community Components](https://github.com/blueraai/universal-intelligence/blob/main/universal_intelligence/www/community/)
+- 🔧 Help maintain, test, enhance and create [Community Components](https://github.com/spacehendrix/universal-intelligence/blob/main/universal_intelligence/www/community/)
 - ✉️ Email us security concerns
 - ❤️ Sponsor this project on Github
-- 🤝 [Partner with Bluera](mailto:contact@bluera.ai)
+- 🤝 [Partner with spacehendrix](mailto:thespacehendrix@gmail.com)
 
 
 ## License
 
-Apache 2.0 License - [Bluera Inc.](https://bluera.ai)
+Apache 2.0 License - [spacehendrix](https://spacehendrix.com)

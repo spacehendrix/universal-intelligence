@@ -1,14 +1,14 @@
 # Security
 
-Bluera prioritizes the security and trust of our software products and services, including all open source software managed through our organization.
+spacehendrix prioritizes the security and trust of our software products and services, including all open source software managed through our organization.
 
 **For the security of our users, please DO NOT report security vulnerabilities through GitHub, social medias, or any public channel. Doing so may put others at risk of them being broadly exploited.**
 
-If you need to report a security issue, please email us at [contact@bluera.ai](mailto:contact@bluera.ai) following the intructions below.
+If you need to report a security issue, please email us at [thespacehendrix@gmail.com](mailto:thespacehendrix@gmail.com) following the intructions below.
 
-## How to report a potential security vulnerability in a Bluera product or service
+## How to report a potential security vulnerability in a spacehendrix product or service
 
-You may ***confidentially*** report any potential security vulnerability in any Bluera product or service by emailing us at [contact@bluera.ai](mailto:contact@bluera.ai), and prefixing the subject with `[SECURITY VULNERABILITY]`.
+You may ***confidentially*** report any potential security vulnerability in any spacehendrix product or service by emailing us at [thespacehendrix@gmail.com](mailto:thespacehendrix@gmail.com), and prefixing the subject with `[SECURITY VULNERABILITY]`.
 
 When reaching out to report a vulnerability, please include your best assesment of the following information:
 

@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "universal-intelligence"
 version = "1.2.0"
 authors = [
-    { name = "Bluera Inc.", email = "bluera@bluera.ai" },
+    { name = "spacehendrix", email = "thespacehendrix@gmail.com" },
 ]
 description = "Universal Intelligence"
 readme = "README.md"
@@ -19,8 +19,8 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/blueraai/universal-intelligence"
-"Bug Tracker" = "https://github.com/blueraai/universal-intelligence/issues"
+"Homepage" = "https://github.com/spacehendrix/universal-intelligence"
+"Bug Tracker" = "https://github.com/spacehendrix/universal-intelligence/issues"
 
 [project.optional-dependencies]
 community = [
